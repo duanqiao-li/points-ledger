@@ -27,6 +27,14 @@ node server.mjs
 
 改一下 `server.mjs` 里的 `capacity`，`Ctrl+C` 重启，再试一次。
 
+### 自测
+
+```bash
+node tests/smoke.mjs
+```
+
+它会自己拉起一个服务（端口 3107），跑 6 条断言：列表字段齐全、前两次报名成功、第三次 409、不存在的活动 404、乱敲地址 404。全过打印 `6 passed, 0 failed` 并 `exit 0`。
+
 ## 接口
 
 | 方法 | 路径 | 说明 | 失败时 |
