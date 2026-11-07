@@ -10,7 +10,7 @@ let activities = [
   { id: 2, title: '校园文明引导岗', capacity: 3, joined: 0, points: 2 },
 ]
 
-const PORT = 3000
+const PORT = Number(process.env.PORT) || 3000
 
 function send(res, code, body, type = 'application/json; charset=utf-8') {
   res.writeHead(code, { 'content-type': type })
