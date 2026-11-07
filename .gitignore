@@ -5,3 +5,9 @@ node_modules/
 Thumbs.db
 data/*.json
 package-lock.json
+
+# 第 3 课起的数据文件（运行时生成，不入库）
+data.json
+data.json.tmp
+tests/.tmp-data.json
+tests/.tmp-data.json.tmp
