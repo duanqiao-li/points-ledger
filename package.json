@@ -1,0 +1,15 @@
+{
+  "name": "points-ledger",
+  "version": "0.1.0",
+  "description": "Activity signup with capacity control and an append-only points ledger",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node tests/smoke.mjs"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
